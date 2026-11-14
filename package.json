@@ -1,0 +1,19 @@
+{
+  "name": "orangehrm-playwright",
+  "version": "1.0.0",
+  "description": "Playwright + JavaScript test automation framework (Page Object Model) for the OrangeHRM demo site",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:login": "playwright test tests/login.spec.js",
+    "test:firefox": "playwright test --project=firefox",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://opensource-demo.orangehrmlive.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
